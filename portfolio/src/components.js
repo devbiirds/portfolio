@@ -1,4 +1,10 @@
 const list_arrow = document.querySelector('.arrow_list')
 const disable_item = document.querySelectorAll('.none');
-
-export {list_arrow , disable_item};
+const buttonLeft = document.querySelector('.button.left');
+const buttonRigth = document.querySelector('.button.rigth')
+const wrapper = document.querySelector('.wrapper');
+const repair = document.querySelector('.repair');
+const theyalow = document.querySelector('.theyalow');
+const repairSlide = document.querySelector('.slides__item--second');
+const theyalowSlide = document.querySelector('.slides__item--first')
+export {list_arrow , disable_item,buttonLeft,buttonRigth,wrapper,repair,theyalow,repairSlide,theyalowSlide};
