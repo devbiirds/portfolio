@@ -1,0 +1,110 @@
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+.wrapper{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+}
+.titlebox{
+    display: flex;
+    justify-content: space-evenly;
+    &__image{
+        height: 200px;
+        width: 200px;
+        background: url(/assets/photo.jpg);
+        background-size: contain;
+        border-radius: 50%;
+    }
+    &__info{
+        width: 20%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+        &--links{
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }   
+        &--git{
+            height: 50px;
+            width: 50px;
+            background: url(/assets/git.jpg) no-repeat;
+            background-size: contain;
+            
+        }
+        &--link{
+            height: 50px;
+            width: 50px;
+            background: url(/assets/vk.png) no-repeat;
+            background-size: contain;
+        }
+    }
+}
+.infobox{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__item{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .arrow_list{
+            margin-left:20px;
+        }
+       
+    }
+    .none{
+        display: none;
+    }
+}
+.slides{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    &__item{
+        &--first{
+            display: flex;
+            height: 100%;
+        }
+        width: 80%;
+       
+
+        &--description{
+            width: 50%;
+            height: 100%;
+        }
+        &--theyalow{
+            width: 50%;
+            height: 100%;
+            background: url(/assets/thealow.png) no-repeat;
+            background-size: cover;
+        }
+    }
+    border:1px solid red;
+    .button{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .button.left{
+        img{
+        transform: rotate(90deg);
+    }
+    }
+    .button.rigth{
+        transform: rotate(-90deg);
+    }
+    .disable{
+        display: none;
+    }
+}
