@@ -11,29 +11,34 @@
 </head>
 <body>
     <div class="main">
-        <button >Desktop</button>
-        <button>Mobile</button>
+        <div class="buttons disable">
+        <button  class="desktop" >Desktop</button>
+   
+        <button class="mobile">Mobile</button>
+        <button class="back">Back</button>
+        </div>
         <div class="wrapper">
             <header class="titlebox">
                 <div class="titlebox__image"></div>
                 <div class="titlebox__info">
                     <div class="titlebox__info--name">Vadim Minakov</div>
                     <div class="titlebox__info--links">
-                    <div class="titlebox__info--git"></div>
-                    <div class="titlebox__info--link"></div>
+                    <a href="https://github.com/devbiirds" class="titlebox__info--git"></a>
+                    <a href="https://vk.com/jackpotboy" class="titlebox__info--link"></a>
                 </div>
                 </div>
             </header>
             <section class="infobox">
                 <div class="infobox__item"><p class="infobox__item--title">Education</p><img src="/assets/arrow.svg" alt="arrow" class="arrow_list"></div>
-                <div class="infobox__item none"><p class="infobox__item--education">School</p></div>
-                <div class="infobox__item none"><p class="infobox__item--education">University</p></div>
-                <div class="infobox__item none"><p class="infobox__item--education">RSSchool Courses</p></div>
+                <div class="infobox__item none"><p class="infobox__item--education">School 2007-2018</p></div>
+                <div class="infobox__item none"><p class="infobox__item--education">University 2018-2022 </p></div>
+                <div class="infobox__item none"><p class="infobox__item--education">RSSchool Courses 2019-2020</p></div>
             </section>
             <section class="slides">
                 <div class="button left"><img src="/assets/arrow.svg" alt="arrow"></div>
                 <div class="slides__item">
                 <div class="slides__item--first">
+                    <div class="show_all disable">Show Description</div>
                     <div class="slides__item--description">
                         <p>Theyalow</p>
                         <p>Pixel Perfect markup</p>
@@ -55,8 +60,8 @@
                 <div class="button rigth"><img src="/assets/arrow.svg" alt="arrow"></div>
             </section>
         </div>
-        <iframe src="/links/theyalow/index.html" width="100%" class="theyalow"></iframe>
-        <iframe src="/links/repair-design-project/index.html" width="100%" class="repair"></iframe>
+        <iframe src="/links/theyalow/index.html" width="1440px" class="theyalow" ></iframe>
+        <iframe src="/links/repair-design-project/index.html" width="1440px" class="repair"></iframe>
     </div>
 </body>
 <script src="/dist/bundle.js"></script>

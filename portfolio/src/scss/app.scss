@@ -5,6 +5,11 @@
     justify-content: center;
     height: 100vh;
 }
+.buttons{
+    position: fixed;
+  
+
+}
 .wrapper{
     
     width: 100%;
@@ -23,7 +28,7 @@
     &__image{
         height: 200px;
         width: 200px;
-        background: url(/assets/photo.jpg);
+        background: url(/assets/photo.jpg) no-repeat;
         background-size: contain;
         border-radius: 50%;
     }
@@ -71,6 +76,22 @@
     .none{
         display: none;
     }
+}
+.titlebox__info--name{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.infobox__item--education{
+    margin-top:10px;
+    margin-bottom: 10px;
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.slides__item--description{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
 }
 .slides{
     display: flex;
@@ -122,10 +143,55 @@
             transform: rotate(-90deg);
         }
     }
-    .disable{
-        display: none;
-    }
+    
 }
+.disable{
+    display: none;
+}
+.active_frame{
+    display: unset;
+    
+    
+}
+
 .activate{
     display: flex;
+}
+.desktop-frame{
+    
+    width:1400px;
+}
+.mobile-frame{
+    width: 640px;
+}
+@media screen and (max-width:600px){
+    .slides__item--first{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+       align-items: center;
+    }
+    
+    .slides_item{
+        height: 100%;
+        width: 100%;
+    }
+    .slides__item--second{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+    }
+    .slides{
+        flex-direction: column;
+    }
+    .slides{
+        .button{
+            display: none;
+        }
+        &__item{
+            height: 100%;
+            width: 100%;
+        }
+    }
 }
